@@ -23,9 +23,8 @@ class LoadFactOperator(BaseOperator):
         self.log.info('Stating to load data')
 
         sql = f"""
-            BEGIN
             INSERT INTO {self.table}
-            {self.load_sql};
+            ({self.load_sql});
             COMMIT;
         """
         redshift.run(sql)
