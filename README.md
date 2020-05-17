@@ -19,6 +19,12 @@ data warehouse in Amazon Redshift. The source datasets consist of JSON
 logs that tell about user activity in the application and JSON metadata
 about the songs the users listen to.
 
+## Resolution
+The resolution of this problem entails writing customised Python Airflow Operators
+for loading data from S3 into staging tables in Redshift -- Star Schema. Furthermore, 
+I also desinged customised operators to insert data from Staging tables into tables
+within a star schema. 
+
 ## Project Structure
 
 ```
