@@ -4,7 +4,9 @@ from airflow.utils.decorators import apply_defaults
 
 
 class LoadDimensionOperator(BaseOperator):
-
+    """
+    Loads data into dimension tables of Star Schema
+    """
     ui_color = '#80BD9E'
 
     @apply_defaults

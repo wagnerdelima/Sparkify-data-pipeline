@@ -4,6 +4,9 @@ from airflow.utils.decorators import apply_defaults
 
 
 class LoadFactOperator(BaseOperator):
+    """
+    Load fact elements int fact table in Star Schema
+    """
     ui_color = '#F98866'
 
     @apply_defaults

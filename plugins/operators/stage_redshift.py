@@ -5,6 +5,9 @@ from airflow.utils.decorators import apply_defaults
 
 
 class StageToRedshiftOperator(BaseOperator):
+    """
+    Load data into staging tables in Redshift.
+    """
     ui_color = '#358140'
 
     @apply_defaults
